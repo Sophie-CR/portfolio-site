@@ -1,0 +1,124 @@
+body {
+  background-color: #f7f9fd;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.box {
+  background: linear-gradient(
+    91.3deg,
+    rgb(135, 174, 220) 1.5%,
+    rgb(240, 240, 250) 100.3%
+  );
+  border: solid 1px #113f67;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 950;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+.card {
+  opacity: 0.8;
+  border-style: hidden;
+}
+.current-card {
+  margin-top: 30px;
+}
+.location {
+  margin-top: 25px;
+}
+.search {
+  padding-left: 0;
+}
+.search-btn {
+  min-width: 155px;
+}
+.location-element {
+  margin-top: 5px;
+}
+#current-time-date {
+  font-size: 20px;
+}
+#description::first-letter {
+  text-transform: capitalize;
+}
+#description {
+  font-size: 24px;
+}
+.current-weather {
+  font-size: 30pt;
+  min-width: 220px;
+}
+.celsius-fahrenheit {
+  position: relative;
+  font-size: 16pt;
+  top: -13px;
+}
+.hidden {
+  color: #000;
+  cursor: default;
+  text-decoration: none;
+}
+.hidden:hover {
+  color: #000;
+  text-decoration: none;
+}
+.details {
+  min-width: 220px;
+}
+ul {
+  font-size: 16pt;
+  list-style: none;
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 53px;
+  margin-left: 5px;
+}
+li {
+  margin-bottom: 38px;
+}
+.current-unit {
+  font-size: 16px;
+}
+.hourly-card {
+  font-size: 10pt;
+  margin-top: 30px;
+  text-align: center;
+}
+#hour-label {
+  font-size: 13pt;
+}
+#hourly-forecast-unit {
+  font-size: 8pt;
+}
+.description-hourly::first-letter {
+  text-transform: capitalize;
+}
+.five-day {
+  font-size: 12pt;
+}
+#forecast-unit-high,
+#forecast-unit-low {
+  font-size: 12px;
+}
+#day-label {
+  font-size: 14pt;
+}
+.daily-card {
+  margin-top: 30px;
+}
+#open-source {
+  margin-top: 15px;
+}
+#open-source-link {
+  color: #113f67;
+}
+.footer-links {
+  color: #f0f0f0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.links {
+  text-align: center;
+}
