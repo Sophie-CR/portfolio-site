@@ -139,38 +139,6 @@ function convertToCelsius(event) {
 let replaceCelsius = document.querySelector("#celsius-link");
 replaceCelsius.addEventListener("click", convertToCelsius);
 
-function formatHour(timestamp) {
-  let date = newDate(timestamp * 1000);
-  let hour = date.getHours();
-  let hours = [
-    "00:00",
-    "01:00",
-    "02:00",
-    "03:00",
-    "04:00",
-    "05:00",
-    "06:00",
-    "07:00",
-    "08:00",
-    "09:00",
-    "10:00",
-    "11:00",
-    "12:00",
-    "13:00",
-    "14:00",
-    "15:00",
-    "16:00",
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-    "23:00",
-  ];
-  return hours[hour];
-}
-
 function getHourlyForecast(coordinates) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayHourlyForecast);
@@ -187,7 +155,6 @@ function displayHourlyForecast(response) {
         `<div class="col hour">
             <div class="card hourly-card">
               <div class="card-body">
-               <div id="hour-label">${formatHour(forecastHour.dt)}</div>
                <div id="icon-hourly"><img src="http://openweathermap.org/img/wn/${
                  forecastHour.weather[0].icon
                }@2x.png" id="icon" alt="Sunny"></div>

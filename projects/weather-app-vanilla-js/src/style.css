@@ -81,9 +81,18 @@ li {
 .current-unit {
   font-size: 16px;
 }
+.forecast-label {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.forecast-description {
+  font-size: 16pt;
+
+  padding-left: 0;
+}
 .hourly-card {
   font-size: 10pt;
-  margin-top: 30px;
+  margin-top: 5px;
   text-align: center;
 }
 #hour-label {
@@ -106,7 +115,7 @@ li {
   font-size: 14pt;
 }
 .daily-card {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 #open-source {
   margin-top: 15px;
