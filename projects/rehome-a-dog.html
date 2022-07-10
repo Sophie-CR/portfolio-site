@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rehome a dog 🐕</title>
-      <meta name="Rehome a Dog - Basic Project"  content="An example of a completed SheCodes Basic project by Sophie Rosenberg. This project is about rehoming dogs." />
+    <meta
+      name="Rehome a Dog - Basic Project"
+      content="An example of a completed SheCodes Basic project by Sophie Rosenberg. This project is about rehoming dogs."
+    />
     <style>
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
-      .landingPage {
+      .landingPage,
+      .site-links {
         background: linear-gradient(135deg, #f0ece2 0%, #dfd3c3 100%);
+        border-radius: 10px;
         max-width: 70%;
         margin: auto;
-        border-radius: 10px;
-        text-align: center;
+        margin-bottom: 20px;
         padding-bottom: 20px;
+        text-align: center;
       }
       h1 {
         padding-top: 25px;
@@ -57,12 +62,12 @@
         font-size: 18pt;
         margin: 0 auto;
         padding: 20px;
-        transition: all 200ms ease-in-out;
       }
       button:hover {
         background: #596e79;
         color: #f6f2fe;
         cursor: pointer;
+        transition: all 200ms ease-in-out;
       }
       .link {
         display: block;
@@ -83,6 +88,13 @@
       }
       .credit {
         color: #596e79;
+      }
+      .nav-button {
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .site-link {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -132,11 +144,28 @@
       </div>
       <hr />
       <p class="footer">
-        Page developed by: <span class="credit">Sophie Rosenberg</span></p>
-        <p >
-          <div><a href="https://www.shecodes.io/workshops/shecodes-basics-d35c1bc7-1270-4972-a11b-ea4b0e7dec00/projects/790535" target="_blank" title="The original project on the shecodes.io website">View the project on shecodes.io</a></div></p>
-        <p >
-          <div><a href="/" target="_blank" id="homepage" title="Portfolio Homepage: Sophie Rosenberg">Back to my portfolio homepage</a></div></p>
+        Page developed by: <span class="credit">Sophie Rosenberg</span>
+      </p>
+    </div>
+    <div class="site-links">
+      <div class="nav-button">
+        <a
+          href="https://www.shecodes.io/workshops/shecodes-basics-d35c1bc7-1270-4972-a11b-ea4b0e7dec00/projects/790535"
+          target="_blank"
+          title="The original project on the shecodes.io website"
+          class="site-link"
+          ><button>View the project on shecodes.io</button></a
+        >
+      </div>
+      <div class="nav-button">
+        <a
+          href="/"
+          target="_blank"
+          title="Portfolio Homepage: Sophie Rosenberg"
+          class="site-link"
+          ><button>Back to my portfolio homepage</button></a
+        >
+      </div>
     </div>
     <script>
       function applicationQuestions() {

@@ -60,10 +60,16 @@ body {
   color: var(--secondary-accent-color);
   transition-duration: var(--transition);
 }
-.intro {
+.text-box {
   background-color: var(--primary-color);
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
+  color: var(--secondary-accent-color);
+}
+img {
+  border-radius: var(--radius);
+}
+.intro {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -97,7 +103,7 @@ body {
   font-size: 16pt;
   margin: 20px;
   padding: 15px;
-  width: 300px;
+  max-width: 300px;
 }
 
 .project-button:hover {
@@ -115,39 +121,32 @@ body {
   margin-right: 25%;
 }
 
-.image {
-  border-radius: var(--radius);
-}
 .project-image {
-  border-radius: var(--radius);
   max-height: 300px;
-  max-width: 300px;
-}
-
-#construction-image {
-  border-radius: var(--radius);
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  max-width: 450px;
+  max-width: 90%;
 }
 
 .projects {
-  display: flex;
   margin-bottom: 20px;
 }
 
 .projects div {
-  background-color: var(--primary-color);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
   margin: 5px;
   padding: 20px;
   flex: 1;
 }
 
+#open-source {
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: fit-content;
+}
+
 #profile-photo {
-  border-radius: var(--radius);
   max-height: 200px;
   max-width: 200px;
   margin-bottom: 25px;
@@ -159,9 +158,6 @@ body {
 }
 
 .bio div {
-  background-color: var(--primary-color);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
   margin: 5px;
   max-width: 400px;
   padding: 20px;
@@ -169,12 +165,15 @@ body {
 }
 
 #contact {
-  background-color: var(--primary-color);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   max-width: fit-content;
   padding: 20px;
+}
+
+@media (max-width: 576px) {
+  #open-source {
+    max-width: 95%;
+  }
 }
