@@ -105,7 +105,7 @@
         <p>
           Welcome to my portfolio website. My name is Sophie Rosenberg, I am a
           coding student with
-          <a href="https://www.shecodes.io/" target="_blank" title="shecodes.io"
+          <a href="https://www.shecodes.io/" target="_blank" class="link" title="shecodes.io"
             >SheCodes</a
           >, based in London in the UK. The best way to learn is by doing, and I
           made this website to showcase some of the projects that I have been
@@ -113,8 +113,9 @@
           biggest project so far is this website itself! 😊
         </p>
       </div>
-      <div class="projects">
-        <div class="text-box">
+      <div class="row project">
+        <div class="col-sm-6 text-box project-text">
+          <div class="project-text-content">
           <a
             href="/projects/weather-app-vanilla-js/index.html"
             target="_blank"
@@ -134,6 +135,9 @@
             Since the end of the course, I have developed this project further by adding an 
             hourly forecast.
           </p>
+        </div>
+        </div>
+        <div class="col-sm-6 project-image-box">
           <img
             src="images/weather-screenshot.png"
             class="image project-image"
@@ -141,7 +145,18 @@
             alt="Screenshot of weather app"
           />
         </div>
-        <div class="text-box">
+      </div>
+      <div class="row project">
+        <div class="col-sm-6 project-image-box">
+          <img
+            src="images/dogs-screenshot.png"
+            class="image project-image"
+            id="dogs-image"
+            alt="Screenshot of rehome a dog project"
+          />
+        </div>
+        <div class="col-sm-6 text-box project-text">
+          <div class="project-text-content">
           <a
             href="/projects/rehome-a-dog.html"
             target="_blank"
@@ -157,12 +172,7 @@
             able to learn how make a project like this so soon after starting to
             learn to code.
           </p>
-          <img
-            src="images/dogs-screenshot.png"
-            class="image project-image"
-            id="dogs-image"
-            alt="Screenshot of rehome a dog project"
-          />
+        </div>
         </div>
       </div>
 
@@ -180,6 +190,7 @@
           href="https://github.com/Sophie-CR/portfolio-site"
           target="_blank"
           class="link"
+          title="View the source code on GitHub"
           >Open source code</a
         >
         by Sophie Rosenberg
