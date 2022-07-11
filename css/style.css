@@ -3,7 +3,7 @@
   --secondary-color: #47b5ff;
   --primary-accent-color: #1363df;
   --secondary-accent-color: #06283d;
-  --box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.1);
+  --box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.2);
   --transition: 200ms ease-in-out;
   --radius: 5px;
 }
@@ -128,7 +128,6 @@ img {
   position: relative;
 }
 .project-image {
-  border-radius: var(--radius);
   max-width: 100%;
   position: relative;
   top: 50%;
@@ -188,6 +187,7 @@ img {
 .about-me {
   margin: 5px;
   margin-top: 30px;
+  min-width: 180px;
   padding: 20px;
   flex: 1;
 }
@@ -222,8 +222,9 @@ img {
 }
 
 @media (min-width: 1400px) {
-  .about-me {
-    margin-left: 200px;
-    margin-right: 200px;
+  .bio,
+  .gallery {
+    margin-left: 300px;
+    margin-right: 300px;
   }
 }
