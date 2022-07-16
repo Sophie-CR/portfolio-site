@@ -4,7 +4,7 @@
   --primary-accent-color: #1363df;
   --secondary-accent-color: #06283d;
   --box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.2);
-  --transition: 200ms ease-in-out;
+  --transition: 300ms;
   --radius: 5px;
 }
 body {
@@ -49,6 +49,15 @@ body {
 .navbar-toggler {
   color: var(--secondary-color) !important;
 }
+img {
+  border-radius: var(--radius);
+}
+h1 {
+  opacity: 0.9;
+}
+button:hover {
+  transition-duration: var(--transition);
+}
 .link {
   color: var(--primary-accent-color);
 }
@@ -56,14 +65,16 @@ body {
   color: var(--secondary-accent-color);
   transition-duration: var(--transition);
 }
-.text-box {
-  background-color: var(--primary-color);
-  border-radius: var(--radius);
-  color: var(--secondary-accent-color);
+
+.box {
+  position: relative;
 }
-img {
-  border-radius: var(--radius);
+.box-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
 .hero {
   background: linear-gradient(to top, #47b5ff 0%, #dff6ff 100%);
   display: block;
@@ -87,7 +98,6 @@ img {
   border: 2px solid var(--secondary-accent-color);
   color: var(--secondary-accent-color);
   cursor: pointer;
-  transition-duration: var(--transition);
 }
 .site-button {
   font-size: 16pt;
@@ -114,20 +124,15 @@ img {
   background: var(--secondary-color);
   border-radius: var(--radius);
   padding: 30px;
-  position: relative;
 }
 .project-image {
   max-width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .project {
   display: flex;
   margin-bottom: 20px;
   padding: 10px;
-  position: relative;
 }
 
 .project-text {
@@ -136,12 +141,6 @@ img {
   max-height: fit-content;
   padding: 20px;
   flex: 1;
-}
-
-.project-text-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #open-source {
@@ -158,16 +157,6 @@ img {
   font-size: 20pt;
 }
 
-.profile-photo-box {
-  position: relative;
-}
-
-.profile-photo {
-  max-width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 #profile-photo {
   max-height: 200px;
   max-width: 200px;
@@ -192,12 +181,6 @@ img {
   #open-source,
   #contact {
     max-width: 95%;
-  }
-}
-
-@media (min-width: 576px) {
-  #profile-photo-box {
-    max-width: 300px;
   }
 }
 
