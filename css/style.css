@@ -63,6 +63,9 @@ h1 {
 button:hover {
   transition-duration: var(--transition);
 }
+a:hover {
+  transition-duration: var(--transition);
+}
 .link {
   color: var(--primary-accent-color);
 }
@@ -94,39 +97,27 @@ button:hover {
   margin: 0 auto;
   max-width: 92%;
 }
-.site-button,
-.project-button {
+
+.dark-button {
   background-color: var(--primary-accent-color);
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
   color: var(--primary-color);
 }
-.site-button:hover,
-.project-button:hover {
+
+.dark-button:hover {
   background-color: var(--secondary-color);
   border: 2px solid var(--secondary-accent-color);
   color: var(--secondary-accent-color);
   cursor: pointer;
 }
-.site-button {
-  font-size: 16pt;
-  margin: 20px;
-  padding: 15px;
-  width: 160px;
-}
 
-.project-button {
+.dark-button,
+.light-button {
   font-size: 16pt;
   margin: 20px;
   padding: 15px;
   max-width: 300px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-evenly;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 .project-image {
@@ -145,16 +136,6 @@ button:hover {
   max-height: fit-content;
   padding: 20px;
   flex: 1;
-}
-
-#open-source {
-  display: block;
-  margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: fit-content;
 }
 
 #my-title {
@@ -181,6 +162,41 @@ button:hover {
   padding: 20px;
 }
 
+.footer {
+  color: var(--primary-accent-color);
+}
+.work-enquiry {
+  color: var(--primary-color);
+  text-align: left;
+}
+.light-button {
+  background-color: var(--primary-color);
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-accent-color);
+}
+.light-button:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-accent-color);
+  color: var(--secondary-accent-color);
+  cursor: pointer;
+}
+.footer-row {
+  background-color: var(--primary-accent-color);
+  border-radius: var(--radius);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.footer-email-link {
+  font-size: 20pt;
+  text-decoration: none;
+}
+.social-links {
+  font-size: 26pt;
+}
+.footer-dark {
+  color: var(--secondary-accent-color);
+}
 @media (max-width: 768px) {
   #open-source,
   #contact {
@@ -201,6 +217,10 @@ button:hover {
     margin: 0 auto;
     max-width: 90%;
   }
+  .footer-row {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 @media (min-width: 1200px) {
   .project {
@@ -211,6 +231,10 @@ button:hover {
     display: block;
     margin: 0 auto;
     max-width: 70%;
+  }
+  .footer-row {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
