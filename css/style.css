@@ -13,7 +13,14 @@ body {
   margin-bottom: 50px;
   text-align: center;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .navbar {
   background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -188,7 +195,7 @@ a:hover {
   margin-right: 2%;
 }
 .footer-email-link {
-  font-size: 20pt;
+  font-size: 18pt;
   text-decoration: none;
 }
 .social-links {
@@ -223,10 +230,6 @@ a:hover {
   }
 }
 @media (min-width: 1200px) {
-  .project {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
   .hero-content-about {
     display: block;
     margin: 0 auto;
@@ -239,7 +242,8 @@ a:hover {
 }
 
 @media (min-width: 1400px) {
-  .gallery {
+  .gallery,
+  .project {
     margin-left: 300px;
     margin-right: 300px;
   }
