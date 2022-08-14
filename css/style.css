@@ -6,12 +6,8 @@
   --box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.2);
   --transition: 300ms;
   --radius: 6px;
-}
-body {
-  background-color: var(--primary-color);
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 50px;
-  text-align: center;
+  --font-heading: Verdana, Geneva, Tahoma, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
 }
 h1,
 h2,
@@ -19,7 +15,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-heading);
+}
+body {
+  background-color: var(--primary-color);
+  font-family: var(--font-body);
+  margin-bottom: 50px;
+  text-align: center;
 }
 .navbar {
   background-color: var(--primary-color);
@@ -108,7 +110,16 @@ a:hover {
   margin: 0 auto;
   max-width: 92%;
 }
-
+.skill-icon {
+  color: var(--secondary-accent-color);
+  font-size: 36pt;
+  margin-top: 10px;
+}
+.skill-name {
+  color: var(--secondary-accent-color);
+  font-family: var(--font-heading);
+  font-size: 18pt;
+}
 .dark-button {
   background-color: var(--primary-accent-color);
   border-radius: var(--radius);
