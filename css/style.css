@@ -27,12 +27,10 @@ body {
   background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
 }
-
 .nav-link,
 .navbar-brand {
   color: var(--secondary-accent-color) !important;
 }
-
 .nav-link:hover {
   color: var(--primary-accent-color) !important;
   transition-duration: var(--transition);
@@ -69,20 +67,17 @@ img {
 h1 {
   opacity: 0.9;
 }
+a:hover,
 button:hover {
   transition-duration: var(--transition);
 }
-a:hover {
-  transition-duration: var(--transition);
-}
-.link {
+a {
   color: var(--primary-accent-color);
 }
-.link:hover {
+a:hover {
   color: var(--secondary-accent-color);
   transition-duration: var(--transition);
 }
-
 .box {
   position: relative;
 }
@@ -91,7 +86,6 @@ a:hover {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .hero {
   background: linear-gradient(
     to top,
@@ -109,6 +103,12 @@ a:hover {
   display: block;
   margin: 0 auto;
   max-width: 92%;
+}
+.shecodes-link {
+  color: #9772f2;
+}
+.shecodes-link:hover {
+  color: #fe719b;
 }
 .skill-icon {
   color: var(--secondary-accent-color);
@@ -178,6 +178,7 @@ a:hover {
 
 #contact {
   display: block;
+  font-size: 16pt;
   margin: 0 auto;
   margin-top: 30px;
   max-width: fit-content;
@@ -225,6 +226,12 @@ a:hover {
     display: block;
     margin: 0 auto;
     max-width: 95%;
+  }
+  .project-text {
+    margin-top: 0px;
+  }
+  .project {
+    margin-bottom: 0px;
   }
 }
 
