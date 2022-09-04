@@ -89,9 +89,10 @@ a:hover {
 .hero {
   background: linear-gradient(
     to top,
-    var(--secondary-color) 0%,
+    var(--secondary-color) 20%,
     var(--primary-color) 100%
   );
+
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
