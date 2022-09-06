@@ -223,7 +223,11 @@ h6 {
 
 .gallery-image {
   height: auto;
-  max-width: 100%;
+  max-width: 90%;
+}
+.gallery-image:hover {
+  transform: scale(110%);
+  transition: var(--transition);
 }
 .caption {
   background-color: var(--secondary-color);
@@ -232,10 +236,10 @@ h6 {
   display: block;
   height: auto;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   position: relative;
   transform: translateY(-50%);
-  width: 80%;
+  width: 70%;
 }
 
 @media (max-width: 576px) {
