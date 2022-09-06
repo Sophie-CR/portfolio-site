@@ -15,10 +15,12 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--secondary-accent-color);
   font-family: var(--font-heading);
 }
 body {
   background-color: var(--primary-color);
+  color: var(--secondary-accent-color);
   font-family: var(--font-body);
   margin-bottom: 50px;
   text-align: center;
@@ -112,12 +114,10 @@ a:hover {
   color: #fe719b;
 }
 .skill-icon {
-  color: var(--secondary-accent-color);
   font-size: 36pt;
   margin-top: 10px;
 }
 .skill-name {
-  color: var(--secondary-accent-color);
   font-family: var(--font-heading);
   font-size: 18pt;
 }
@@ -185,12 +185,7 @@ a:hover {
   max-width: fit-content;
   padding: 20px;
 }
-
-.footer {
-  color: var(--primary-accent-color);
-}
 .work-enquiry {
-  color: var(--primary-color);
   text-align: left;
 }
 .light-button {
@@ -204,6 +199,10 @@ a:hover {
   border: 2px solid var(--secondary-accent-color);
   color: var(--secondary-accent-color);
   cursor: pointer;
+}
+.work-enquiry h3,
+h6 {
+  color: var(--primary-color);
 }
 .footer-row {
   background-color: var(--primary-accent-color);
@@ -221,6 +220,30 @@ a:hover {
 .footer-dark {
   color: var(--secondary-accent-color);
 }
+
+.gallery-image {
+  height: auto;
+  max-width: 100%;
+}
+.caption {
+  background-color: var(--secondary-color);
+  border-radius: var(--radius);
+  color: var(--secondary-accent-color);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  transform: translateY(-50%);
+  width: 80%;
+}
+
+@media (max-width: 576px) {
+  .footer-email-link {
+    font-size: 12pt;
+  }
+}
+
 @media (max-width: 768px) {
   #open-source,
   #contact {
